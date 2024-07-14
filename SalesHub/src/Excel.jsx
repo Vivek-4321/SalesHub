@@ -10,7 +10,7 @@ const Excel = () => {
   const [headers, setHeaders] = useState([]);
   const [editingCell, setEditingCell] = useState(null);
   const [error, setError] = useState(null);
-  const [contextMenu, setContextMenu] = useState(null);
+  const [contextMenu, setContextMenu] = useState(null);  
 
   const selectedCollection = useStore((state) => state.dropdown);
 
@@ -135,7 +135,7 @@ const Excel = () => {
   };
 
   return (
-    <div className="excel" onClick={() => setContextMenu(null)}>
+    <div className="excel" onClick={() => setContextMenu(null)}>    
       {error && <div className="error-message">{error}</div>}
 
       <DropDown />

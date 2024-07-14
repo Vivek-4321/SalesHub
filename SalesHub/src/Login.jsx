@@ -72,6 +72,7 @@ const Login = () => {
     return (
         <div className='login-body'>
             <div className='login-form'>
+                <h1>Login</h1>
                 <input type='email' value={email} onChange={(e) => {setEmail(e.target.value)}} placeholder='Email' required />
                 <input type='password' value={password} onChange={(e) => {setPassword(e.target.value)}} placeholder='Password' required/>
                 <button onClick={signInUSer}>Login</button>

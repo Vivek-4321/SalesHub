@@ -86,9 +86,11 @@ const FileUpload = () => {
 
   return (
     <div className='file-upload-body'>
-      <DropDown />
-      <input type='file' onChange={(e) => { setFile(e.target.files[0]) }} />
-      <button onClick={handleUploadFile}>Upload file</button>
+      <div className="data-entry-container">
+        <DropDown />
+        <input type='file' className='file-reader' onChange={(e) => { setFile(e.target.files[0]) }} />
+        <button onClick={handleUploadFile}>Upload file</button>
+      </div>
     </div>
   );
 }

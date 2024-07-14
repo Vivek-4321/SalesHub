@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import getCookie from './utils/getCookie';
 
 const Home = () => {
 
-    const navigate = useNavigate();
+    const navigate = useNavigate();    
+
+    useEffect(() => {
+        const user_id = getCookie('user_id');
+        console.log("User id: ", user_id);
+
+        if (!user_id) {
+            navigate('/login');
+        }
+    }, [navigate]);
 
     return (
-        <div className='home'>
-            <button onClick={() => {navigate('/login')}}>Login</button>
-            <button onClick={() => {navigate('/dataEntry')}}>Data Entry</button>         
-        </div>
+        <>
+        </>
     );
 }
 
