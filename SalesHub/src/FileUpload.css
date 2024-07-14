@@ -1,0 +1,7 @@
+.file-upload-body {
+    width: 50%;
+    height: 58rem;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+}
