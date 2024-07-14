@@ -172,6 +172,7 @@ import AnimatedLineGraph from './AnimatedLineGraph';
 import BarGraph from './AnimatedBarGraph';
 import AnimatedScatterPlot from './AnimatedScatterPlot';
 import AnimatedPieChart from './AnimatedPieChart';
+import './Graph.css';
 
 function Graph() {
   const [salesData, setSalesData] = useState([]);
