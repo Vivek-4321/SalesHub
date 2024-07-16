@@ -5,6 +5,7 @@ import Modal from './Modal';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from './firebase'; // Make sure this path is correct
 import "./Calendar.css";
+import ChatBot from './ChatBot';
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -230,6 +231,7 @@ const Calendar = () => {
         selectedRole={selectedRole}
         availableSlots={availableSlots}
       />
+      <ChatBot/>
     </div>
   );
 };

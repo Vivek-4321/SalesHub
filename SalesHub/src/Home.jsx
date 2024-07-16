@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import getCookie from './utils/getCookie';
 import Graph from './Graph';
+import ChatBot from './ChatBot';
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
     return (
         <>
             <Graph/>
+            <ChatBot/>
         </>
     );
 }

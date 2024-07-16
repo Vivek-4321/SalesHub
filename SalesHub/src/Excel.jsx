@@ -4,6 +4,7 @@ import { collection, getDocs, updateDoc, doc, addDoc, deleteDoc, deleteField } f
 import './Excel.css';
 import DropDown from "./DropDown.jsx";
 import useStore from './store/store.js';
+import ChatBot from './ChatBot.jsx';
 
 const Excel = () => {
   const [data, setData] = useState([]);
@@ -188,6 +189,7 @@ const Excel = () => {
           <button onClick={handleDeleteRow}>Delete Row</button>
         </div>
       )}
+      <ChatBot/>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import * as XLSX from 'xlsx';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { db } from './firebase.js'; // Make sure you import the Firebase app correctly
 import './FileUpload.css';
+import ChatBot from './ChatBot.jsx';
 
 const FileUpload = () => {
   const [fileType, setFileType] = useState('');
@@ -91,6 +92,7 @@ const FileUpload = () => {
         <input type='file' className='file-reader' onChange={(e) => { setFile(e.target.files[0]) }} />
         <button onClick={handleUploadFile}>Upload file</button>
       </div>
+      <ChatBot/>
     </div>
   );
 }
